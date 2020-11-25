@@ -1,6 +1,6 @@
 # Info
-- App was create using create-react-app to facilitate quick setup and integrated testing
-- Mapxbox and React map gl used for mapping functionality (https://github.com/visgl/react-map-gl - https://docs.mapbox.com/help/tutorials/use-mapbox-gl-js-with-react/)
+- App was created using create-react-app to facilitate quick setup and integrated testing
+- Mapxbox and React map gl were used for mapping functionality (https://github.com/visgl/react-map-gl - https://docs.mapbox.com/help/tutorials/use-mapbox-gl-js-with-react/)
 
 # Instructions to run app live locally with live-server
 - Clone the repository locally
