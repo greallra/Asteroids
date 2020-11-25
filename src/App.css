@@ -1,0 +1,117 @@
+:root {
+  --white: #fff;
+  --transparent-black: #62646a;
+  --yellow: #FFE39A;
+  --lightest-grey: #fefefe;
+  --lightgrey: #F5F5F5;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+html,body, #root, .App {
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+textarea {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Domine', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.marker-fix-20 {
+  top: -20px !important;
+}
+
+.marker-fix-10 {
+  top: -10px !important;
+}
+
+video {
+  object-fit: cover !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.flag-sm {
+  line-height: 0.7em !important;
+  width: 1em !important;
+}
