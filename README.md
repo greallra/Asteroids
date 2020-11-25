@@ -1,8 +1,12 @@
+# Info
+- App was create using create-react-app to facilitate quick setup and integrated testing
+- React map gl used for mapping functionality (https://github.com/visgl/react-map-gl)
+
 # Instructions to run app live locally with live-server
 - Clone the repository locally
 - Create .env.local file at the project root and 2 api keys will be required (1. Nasa Api Key - 2. React map gl Api key), paste the following lines into .env.local:
 REACT_APP_MAPBOX_TOKEN=yourmapboxtoken
-REACT_APP_NASA_API_KEY=yournasaapi key
+REACT_APP_NASA_API_KEY=yournasaapikey
 - Replace the values with your keys
 - Run npm install to install the dependencies
 - Run npm start to launch the app in a broswer
