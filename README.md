@@ -4,10 +4,15 @@
 
 # Instructions to run app live locally with live-server
 - Clone the repository locally
-- Create .env.local file at the project root and 2 api keys will be required (1. Nasa Api Key - 2. React map gl Api key), paste the following lines into .env.local:
+- Create .env.local file at the project root and 2 api keys will be required 
+  1. Nasa Api Key=DEMO is free api key with limited requests
+  2. React map gl Api key
+Copy and paste the following lines into .env.local:
+
 REACT_APP_MAPBOX_TOKEN=yourmapboxtoken
-REACT_APP_NASA_API_KEY=yournasaapikey
-- Replace the values with your keys
+REACT_APP_NASA_API_KEY=DEMO
+
+- Replace the REACT_APP_MAPBOX_TOKEN with your token
 - Run npm install to install the dependencies
 - Run npm start to launch the app in a broswer
 - Run npm test to trigger the unit tests
