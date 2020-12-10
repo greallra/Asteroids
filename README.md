@@ -9,6 +9,7 @@
   2. React map gl Api key
   
 Copy and paste the following lines into .env.local:
+
 REACT_APP_MAPBOX_TOKEN=yourmapboxtoken
 REACT_APP_NASA_API_KEY=DEMO
 
