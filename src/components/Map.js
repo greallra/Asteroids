@@ -49,6 +49,12 @@ function MapWrapper() {
     }
   }, [latitude, longitude])
 
+  console.log(meteors);
+  if(meteors.length > 0){
+  console.log( typeof meteors[0].geolocation.longitude);
+  console.log(meteors[0].geolocation.latitude);
+  }
+
 return (
     <ReactMapGl 
     {...viewport} 
@@ -60,13 +66,12 @@ return (
     //choose map type here: https://studio.mapbox.com/
     mapStyle="mapbox://styles/greallra/ckh4yv72f0cc619p4btr5qlkf"
     >
-    
-    {/* Default - All meteors */}
-    {!selectedMeteor && meteors.length > 0 && meteors.map((meteor,i)=>( <Marker latitude={meteor.geolocation.coordinates[1]} longitude={meteor.geolocation.coordinates[0]} name={meteor.name} key={i}/> ))}
+    {meteors.length > 0 &&<Marker latitude={Number(meteors[0].geolocation.latitude)} longitude={Number(meteors[0].geolocation.longitude)} name={meteors[0].name} key={0}/>}
+    {!selectedMeteor && meteors.length > 0 && meteors.map((meteor,i)=>( <Marker latitude={Number(meteor.geolocation.latitude)} longitude={Number(meteor.geolocation.longitude)} name={meteor.name} key={i}/>))}
 
     {/* Selected Meteor */}
     {selectedMeteor && 
-        <Marker latitude={selectedMeteor.geolocation.coordinates[1]} longitude={selectedMeteor.geolocation.coordinates[0]} name={selectedMeteor.name}/>
+        <Marker latitude={Number(selectedMeteor.geolocation.latitude)} longitude={Number(selectedMeteor.geolocation.longitude)} name={selectedMeteor.name}/>
     }
      
     {!latitude && !longitude && <ClipLoader size={20} color={"black"} loading={true} />}
